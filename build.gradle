@@ -7,7 +7,7 @@ sourceCompatibility = '1.7'
 // War configuration
 war {
 	baseName = 'simple-spring-mvc'
-    version = '1.0-SNAPSHOT'
+	version = '1.0-SNAPSHOT'
 }
 
 repositories {
