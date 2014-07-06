@@ -12,11 +12,14 @@ public class WebAppConfig implements WebApplicationInitializer {
 
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
-		final AnnotationConfigWebApplicationContext appContext = new AnnotationConfigWebApplicationContext();
+		
+		// Spring application context
+		AnnotationConfigWebApplicationContext appContext = new AnnotationConfigWebApplicationContext();
 		appContext.setServletContext(servletContext);
 		appContext.scan("com.example.config");
 		appContext.refresh();
 
+		// Register and map the dispatcher servlet
 		ServletRegistration.Dynamic dispatcher =
 				servletContext.addServlet("dispatcherServlet", new DispatcherServlet(appContext));
 		dispatcher.setLoadOnStartup(1);
