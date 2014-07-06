@@ -1,0 +1,21 @@
+// Required plugins
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+sourceCompatibility = '1.7'
+
+// War configuration
+war {
+	baseName = 'simple-spring-mvc'
+    version = '1.0-SNAPSHOT'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+	compile 'org.springframework:spring-webmvc:4.0.5.RELEASE'
+	runtime 'javax.servlet:jstl:1.2'
+}
