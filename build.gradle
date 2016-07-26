@@ -1,8 +1,10 @@
 // Required plugins
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
+apply plugin: 'idea'
 
-sourceCompatibility = '1.7'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 // War configuration
 war {
@@ -17,6 +19,6 @@ repositories {
 
 dependencies {
 	providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
-	compile 'org.springframework:spring-webmvc:4.0.5.RELEASE'
-	runtime 'javax.servlet:jstl:1.2'
+	compile 'org.springframework:spring-webmvc:4.3.1.RELEASE'
+	runtime 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1'
 }
