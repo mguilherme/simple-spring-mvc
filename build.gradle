@@ -8,17 +8,17 @@ targetCompatibility = 1.8
 
 // War configuration
 war {
-	baseName = 'simple-spring-mvc'
-	version = '1.0-SNAPSHOT'
+    baseName = 'simple-spring-mvc'
+    version = '1.0-SNAPSHOT'
 }
 
 repositories {
-	mavenLocal()
-	mavenCentral()
+    mavenLocal()
+    mavenCentral()
 }
 
 dependencies {
-	providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
-	compile 'org.springframework:spring-webmvc:4.3.1.RELEASE'
-	runtime 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1'
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile 'org.springframework:spring-webmvc:4.3.1.RELEASE'
+    runtime 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1'
 }
