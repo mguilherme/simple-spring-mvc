@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
-    compile 'org.springframework:spring-webmvc:4.3.1.RELEASE'
+    compile 'org.springframework:spring-webmvc:4.3.2.RELEASE'
     runtime 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1'
 }
 
